@@ -1,0 +1,90 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background:url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%; 
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 800;
+    color: white;
+    font-size: max(4.3vw, 50px);
+}
+.header-contents p{
+    color: white;
+    font-size: 1.3vw;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+.header-contents button:hover {
+    background-color:#ffff;
+    transform: scale(1.05);
+  }
+ /* For screens with max-width of 1050px */
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 70%; /* Adjusted for better scaling */
+    }
+    .header-contents h2 {
+        font-weight: 800;
+        color: white;
+        font-size: max(4.3vw, 50px);
+        margin: auto;
+    }
+    .header-contents button {
+        display: inline-block;
+        margin: 30px auto; /* Adjusts the vertical and horizontal margin */
+        padding: 1vw 2.3vw; /* Adjusts button size */
+        border-radius: 12px; /* Adjusts roundness */
+        font-size: 16px; /* Adjusts text size */
+        position: relative;
+        top: -5px; /* Move button up slightly */
+    }
+}
+
+/* For screens with max-width of 750px */
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 90%; /* Adjusted for better scaling on small screens */
+    }
+    .header-contents h2 {
+        font-weight: 800;
+        color: white;
+        font-size: min(6vw, 25px); /* Adjusted font-size for better scaling */
+        margin: auto;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 1vw 2.3vw;
+        font-size: 10px;
+    }
+}
+
+
+
+
+  
+  
